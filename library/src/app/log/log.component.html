@@ -1,0 +1,17 @@
+<h3 style="position:relative;left:30%; width:300px;">Login Page</h3>
+
+
+<form #form="ngForm" (ngSubmit)="onsubmit()">
+    
+    <div class="mb-3">
+      <label style="position:relative;left:30%; width:300px;" class="form-label">User Name</label>
+      <input type="text" style="position:relative;left:30%; width:300px;" class="form-control" name="name" #name="ngModel" [(ngModel)]="data.username">
+
+    </div>
+    <div class="mb-3">
+      <label style="position:relative;left:30%;" class="form-label">Password</label>
+      <input style="position:relative;left:30%;width:300px;" type="password" class="form-control" name="pass" #pass="ngModel" [(ngModel)]="data.password">
+    </div>
+    
+    <button style="position:relative;left:30%; width:300px;" type="submit" class="form-control">Submit</button>
+  </form>

@@ -1,0 +1,20 @@
+
+<h3>AddBook</h3>
+<form #form="ngForm" (ngSubmit)="onsubmit()">
+    
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input type="text" class="form-control" name="title" #Title="ngModel" [(ngModel)]="data.title">
+
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Author</label>
+      <input type="text" class="form-control" name="author" #Author="ngModel" [(ngModel)]="data.author">
+    </div>
+    <div class="mb-3">
+    
+        <label class="form-label">Price</label>
+      <input type="number" class="form-control" name="price" #Price="ngModel" [(ngModel)]="data.price">
+    </div>
+    <button type="submit" class="form-control">Submit</button>
+  </form>

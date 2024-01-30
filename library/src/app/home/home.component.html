@@ -1,0 +1,17 @@
+
+
+
+<div style="height: 300px; width:330px;  position: relative;left:30%;" class="m-5 p-5">
+<div *ngIf="isAuthenticated==true">
+    <button class="btn btn-danger" [routerLink]="['view']"  style="width: 200px; height: 40px; ">View Books</button><br><br>
+    <button class="btn btn-danger" [routerLink]="['add']" style="width: 200px; height: 40px; ">Add Books</button><br><br>
+    <button class="btn btn-danger" (click)="logout()" style="width: 200px; height: 40px;">Logout</button>
+
+</div>    
+    
+    <div *ngIf="isAuthenticated==false">
+    <button class="btn btn-danger" [routerLink]="['register']" style="width: 200px; height: 40px;">Register</button><br><br>
+    <button class="btn btn-danger" [routerLink]="['login']" style="width: 200px; height: 40px;">Login</button><br><br>
+    </div>
+</div>
+<!-- <button class="btn btn-danger" (click)="'view()">Link To View Page</button> --> 
